@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<title>
+			SeqDoc - chromatogram comparisons online
+		</title>
+	</head>
+	<body>		
+		<h2>SeqDoC - Sequence Difference of Chromatograms</h2>
+		<p>Welcome to the SeqDoC website. Using this page you can submit two ABI chromatograms (typically a reference and a test sequence) and you will receive back aligned images of the two chromatograms together with a difference profile. The difference profile allows rapid identification of base substitutions, insertions and deletions in the test sequence, and may be useful for checking genes for mutations or screening PCR products for amplification accuracy.</p>
+		<p>Use of the program is very simple, just upload two chromatogram files and click 'Submit query'. Interpretation of results is also relatively simple, see our page on <a href="interpret.html">interpreting output</a> for more details. However there are a few things that can go wrong, or produce artifactual results, so <a href="problems.html">check here</a> for information on how to avoid those, or at least be aware of them.</p>
+		<p><b>N.B.</b> It seems that there is an alternative (maybe new) format of ABI trace file that doesn't work with SeqDoC. Instead it will generate an 'Unable to extract trace data from one of the chromatograms' error. I haven't yet been able to find a solution to this problem, but am still working on it. Any advice or suggestions are welcome (<a href="mailto:marklcrowe@gmail.com?subject=ABI formats">mail me with comments</a>).
+		<form method="post" action="/cgi-bin/seqdoc.pl" enctype="multipart/form-data">
+			<table cellpadding="5" cellspacing="0" border="0">
+				<tr>
+					<td>Reference sequence</td><td><input type="file" name="ref_seq" size="65"></td>
+				</tr><tr>
+					<td>Test sequence</td><td><input type="file" name="test_seq" size="65"></td>
+				</tr><tr>
+					<td><input type="submit"></td><td><input type="reset"></td>
+				</tr>
+			</table>
+		</form>
+		<p>Unfortunately the program is a bit slow, and takes about 15s to produce output, so please be patient.</p>
+<p>&nbsp;</p>
+<p><b>NEW</b>&nbsp;&nbsp;<a href="multi.html">Multiple SeqDoC</a> - 
+You can now do up to ten <a href="multi.html">multiple alignments</a> against a single reference sequence simultaneously. 
+<p>&nbsp;</p>
+<hr width="80%">
+<p>&nbsp;</p>
+		<p>If you have any comments, questions or suggestions about the use of this tool or problems using it, please contact <a href="mailto:marklcrowe@gmail.com?subject=Chromatogram%20comparison">Mark Crowe</a>. To cite SeqDoC, or to get full details about its implementation, please see <a href="http://www.biomedcentral.com/1471-2105/6/133">our paper in BMC Bioinformatics</a>
+<br>There is also a chapter on SeqDoC in <a href=https://link.springer.com/book/10.1007/978-1-59745-515-2>Methods in Molecular Biology Comparative Genomics volume 2 (2007)</a>. Colour versions of the figures in this paper can be found <a href="Figures/">here</a>.</p>
+
+		<p>The source code for the cgi script (seqdoc.pl) is <a href="seqdoc.pl">available here</a>, as well as through our <a href="https://bioinformatics.org/project/?group_id=481">GitHub site</a>. It requires the CGI module (included in a standard Perl installation) as well as the <a href="http://search.cpan.org/~MALAY/ABI/">ABI module</a> and <a href="http://search.cpan.org/~mverb/GDGraph-1.43/">GD::Graph module</a>.
+<p>&nbsp;</p>
+		<hr>
+		<font size="-1">SeqDoC was brought to you by the Bioinformatics Facility of the ARC Special Research Centre for Functional and Applied Genomics.
+		</font
+	</body>
+</html>
+
