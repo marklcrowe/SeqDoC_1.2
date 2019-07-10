@@ -3,12 +3,16 @@
 		<title>
 			SeqDoc - chromatogram comparisons online
 		</title>
+	<link href="styles/micro.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
 	</head>
 	<body>		
 		<h2>SeqDoC - Sequence Difference of Chromatograms</h2>
 		<p>Welcome to the SeqDoC website. Using this page you can submit two ABI chromatograms (typically a reference and a test sequence) and you will receive back aligned images of the two chromatograms together with a difference profile. The difference profile allows rapid identification of base substitutions, insertions and deletions in the test sequence, and may be useful for checking genes for mutations or screening PCR products for amplification accuracy.</p>
 		<p>Use of the program is very simple, just upload two chromatogram files and click 'Submit query'. Interpretation of results is also relatively simple, see our page on <a href="interpret.html">interpreting output</a> for more details. However there are a few things that can go wrong, or produce artifactual results, so <a href="problems.html">check here</a> for information on how to avoid those, or at least be aware of them.</p>
-		<p><b>N.B.</b> It seems that there is an alternative (maybe new) format of ABI trace file that doesn't work with SeqDoC. Instead it will generate an 'Unable to extract trace data from one of the chromatograms' error. I haven't yet been able to find a solution to this problem, but am still working on it. Any advice or suggestions are welcome (<a href="mailto:marklcrowe@gmail.com?subject=ABI formats">mail me with comments</a>).
+		<p><b>N.B.</b> It seems that there is an alternative (maybe new) format of ABI trace file that doesn't work with SeqDoC. Instead it will generate an 'Unable to extract trace data from one of the chromatograms' error. I haven't yet been able to find a solution to this problem, but any advice or suggestions are welcome (<a href="mailto:marklcrowe@gmail.com?subject=ABI formats">mail me with comments</a>).
 		<form method="post" action="/cgi-bin/seqdoc.pl" enctype="multipart/form-data">
 			<table cellpadding="5" cellspacing="0" border="0">
 				<tr>
@@ -34,7 +38,7 @@ You can now do up to ten <a href="multi.html">multiple alignments</a> against a 
 <p>&nbsp;</p>
 		<hr>
 		<font size="-1">SeqDoC was brought to you by the Bioinformatics Facility of the ARC Special Research Centre for Functional and Applied Genomics.
-		</font
+		</font>
 	</body>
 </html>
 

@@ -1,0 +1,17 @@
+/* The Cascading Style Sheet for the IMB Microarray Facility Website*/
+ body {
+		background-color  : white;
+		color			 : darkgreen;
+		font-family	: arial, helvetica, sans-serif;
+			}
+
+p,table,td,tr,ol,ul,li,h1,h2,h3	{
+			font-family		: arial, helvetica, sans-serif;
+			color			  : darkgreen;
+		   }
+img.center { float: center; }	
+
+a {color: black}		 
+
+ul { list-style-type: none; }
+ul.bullet { list-style-type: disc; }

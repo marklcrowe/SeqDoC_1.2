@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>
+			Chromatogram comparison page
+		</title>
+	<link href="styles/micro.css" rel="stylesheet" type="text/css">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+	<body>
+		
+		<h2>SRC Bioinformatics Facility Chromatogram Comparison Tool</h2>
+		<h3>Interpretation of results</h3>
+		<p>Interpretation of results from the chromatogram comparison is very simple, since the program highlights any differences between the two traces, and also automatically aligns the traces together with a difference profile in the output.</p>
+		<p>There are principally two classes of mutation which can be identified, base substitutions and frameshifts. The former would include either a direct substitution from one base to another or the identification of a polymorphism in the sequencing template, while the latter includes both insertion and deletion mutations. The two classes of mutation give different, but characteristic, output in the difference profile. </p>
+		<p><b>Base substitutions</b> produce a single, typically bi-directional peak. This indicates the reduced intensity of one channel and the increase in the other. While polymorphic sites retain the original base peak as well as the new one, the height of that peak is generally significantly reduced, so a bi-directional peak is still observed.</p>
+		<p><b>Frameshifts</b> cause the two sequence traces to go out of phase at the point of the mutation. Although the software will restore the alignment by altering the trace spacing, for about 7 or 8 bases there will be major differences between the two sequences because of the mis-alignment. The image below shows a deletion, however the insertion pattern is very similar.</p>
+		<table cellspacing=3 border=1>
+			<tr><th>Direct substitution (G to T at 251)</th><th>Polymorphism (G to G/A at 191)</th><th>Deletion (G at 189)</th></tr>
+			<tr><td><img src="substitute.png"></td><td><img src="polymorphism.png"></td><td><img src="deletion.png"></td></tr>
+		</table>
+	</body>
+</html>
+			
