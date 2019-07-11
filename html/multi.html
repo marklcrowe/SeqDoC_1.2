@@ -13,7 +13,7 @@
 		<p>Users with larger numbers of sequences are strongly encouraged to investigate using the <a href="http://staden.sourceforge.net">Staden package</a>, which is better suited (and much faster) for SNP identification in multiple sequences.</p>
 		<p>Please be aware that all alignments returned will be truncated to the length of the <b>shortest</b> trace (this is also the case for regular SeqDoC, but can have more significant implications for multiple SeqDoC). Also, please note that despite the speed benefits of multiple alignments, this program will probably still take between 10s and 15s per test sequences (i.e. maybe more than two minutes for ten samples). Please be patient and don't hit 'reload' - that will only slow things down more.</p>
 		<p>Source code for Multiple SeqDoC is available <a href="multi_seqdoc.pl">here</a>. System requirements and accessory applications are the same as for regular SeqDoC.</p>
-		<form method="post" action="http://arrayresources.imb.uq.edu.au/cgi-bin/multi_seqdoc.pl" enctype="multipart/form-data">
+		<form method="post" action="/cgi-bin/multi_seqdoc.pl" enctype="multipart/form-data">
 			<table cellpadding=5 cellspacing=0 border=0>
 				<tr>
 					<td>Reference sequence</td><td><input type="file" name="ref_seq" size=65></td>
