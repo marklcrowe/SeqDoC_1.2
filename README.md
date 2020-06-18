@@ -3,14 +3,16 @@ Repository for all of SeqDoC code - html and scripts
 
 SeqDoC (Sequence Difference of Chromatograms) aligns and performs a subtractive comparison of two ABI DNA sequence chromoatograms. The subtracted profile is processed to highlight differences characteristic of single base changes. Full details about use and implementation are available at http://www.biomedcentral.com/1471-2105/6/133.
 
-SeqDoC is currently available for public use at http://203.101.226.197/
+SeqDoC is currently available for public use at http://seqdoc.qfab.org/. 
+
+NEW - SeqDoC is now available as a Docker container at https://hub.docker.com/r/marklcrowe/seqdoc.
 
 To set up your own SeqDoC server from scratch, follow the instructions below. It can also be run as a local VM using VirtualBox (see additional steps at end to allow access to VM from host web browser)
 
 1. Install Ubuntu 18.04 using all default settings
 2. Follow apache install instructions at https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-18-04-quickstart. 
 3. Add "ServerName localhost" to /etc/apache/apache2.conf
-4. Install make if necessary "sudo apt-get install make"
+4. Install make "sudo apt-get install make"
 5. "sudo cpan install YAML"
 6. "sudo cpan install ABI"
 7. "sudo cpan install CGI"
