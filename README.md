@@ -5,7 +5,10 @@ SeqDoC (Sequence Difference of Chromatograms) aligns and performs a subtractive 
 
 SeqDoC is currently available for public use at http://seqdoc.qfab.org/. 
 
+
 NEW - SeqDoC is now available as a Docker container at https://hub.docker.com/r/marklcrowe/seqdoc.
+
+
 
 To set up your own SeqDoC server from scratch, follow the instructions below. It can also be run as a local VM using VirtualBox (see additional steps at end to allow access to VM from host web browser)
 
