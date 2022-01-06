@@ -6,7 +6,7 @@ SeqDoC (Sequence Difference of Chromatograms) aligns and performs a subtractive 
 SeqDoC is currently available for public use at http://seqdoc.qfab.org/. 
 
 
-SeqDoC is now available as a Docker container at https://hub.docker.com/r/marklcrowe/seqdoc, and also with DOI on Zenodo: Crowe, Mark Louis. (2020). SeqDoC Docker container (1.2). Zenodo. https://doi.org/10.5281/zenodo.5823561
+SeqDoC is now available as a Docker container at https://hub.docker.com/r/marklcrowe/seqdoc, and also with a DOI on Zenodo: https://doi.org/10.5281/zenodo.5823561
 
 
 
